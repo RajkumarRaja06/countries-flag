@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-blue: #09133e;
+  --clr-white: #fff;
+  --clr-light-blue: #1c39bb;
+  --clr-kashmir-blue: #5a6b84;
+  --clr-white-smoke: #f5f5f5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+.title {
+  margin: 1.5rem auto;
+}
+
+.countriesList {
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
+  padding: 0.75rem;
+}
+
+.countriesList li {
+  width: 80vw;
+  border: 1px solid var(--clr-white-smoke);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  background-color: var(--clr-kashmir-blue);
+}
+
+.countriesList li button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--clr-light-blue);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.countriesList li button:hover {
+  background-color: var(--clr-blue);
+}
+
+.visitedCountriesContainer {
+  margin: 2rem auto;
+}
+
+.visitContainer {
+  width: 80vw;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  gap: 0.75rem;
+}
+
+.image {
+  width: 15rem;
+  height: 100%;
+  background-color: var(--clr-kashmir-blue);
+  display: flex;
+  flex-direction: column;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  font-weight: 700;
+}
+
+.removeBtn {
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
